@@ -1,5 +1,7 @@
 @include('layout.base')
 
+
+
 <table class="table table-bodered">
     <thead>
         <th>id</th>

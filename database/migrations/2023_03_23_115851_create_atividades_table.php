@@ -16,10 +16,13 @@ class CreateAtividadesTable extends Migration
         Schema::create('atividades', function (Blueprint $table) {
             $table->increments('id');
             $table->string('atividade1');
+            $table->time('horario1')->default('00:00:00');
             $table->string('atividade2');
+            $table->time('horario2')->default('00:00:00');
             $table->string('atividade3');
+            $table->time('horario3')->default('00:00:00');
             $table->date('data');
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 

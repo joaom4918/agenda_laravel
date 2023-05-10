@@ -1,7 +1,12 @@
 @include('layout.base')
 
-<h1>adicionar nova atividade</h1> 
-<form action="{{route('admin.atividades.salvar')}}" method="post">
+
+<div class="container mt-5">
+
+ 
+
+    <h1>adicionar nova atividade</h1> 
+    <form action="{{route('admin.atividades.salvar')}}" method="post">
 
     {{ csrf_field() }}
 
@@ -11,3 +16,5 @@
    
 
 </form>
+</div>
+
